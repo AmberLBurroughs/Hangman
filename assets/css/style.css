@@ -5,9 +5,12 @@ body {
 .container {
 	text-align: center;
 }
+#banner{
+	margin-bottom: 3%;
+}
 .sup { 
   color: #fff; 
-  background: red; 
+  background: #FF0000; 
   padding: 7px 7px; 
   text-decoration: none;
   width: 193px;
@@ -39,6 +42,9 @@ body {
 }
 .winloss-container{
 	margin: 0 15%;
+}
+.hide {
+	visibility:hidden;
 }
 @media only screen and (max-width: 991.98px) { 
 	#game-wrapper {

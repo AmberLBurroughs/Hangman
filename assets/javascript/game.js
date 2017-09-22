@@ -22,7 +22,7 @@ var currentDate = new Date(),
 showDate();
 
 
-var wordBank = ["gucci", "addidas", "nike", "jordan", "bape", "channel", "lacoste", "puma", "undefeated", "palace"];
+var wordBank = ["gucci", "addidas", "nike", "jordan", "bape", "channel", "offwhite", "puma", "undefeated", "palace", "fendi", "givenchy", "balenciaga"];
 var wins = 0;
 var losses = 0;
 
@@ -60,6 +60,22 @@ function displayGuesses() {
 function displayError(errorStr){
     document.querySelector("#game-error").innerHTML = errorStr;
 }
+function imageVisibility (){
+    var visibility = document.querySelector("#brand-image").classList.contains("hide");
+    return visibility;
+}
+function showImage() {
+    if(imageVisibility()){
+        var newImageURL = "assets/images/" + wordPicker + ".jpg";
+        document.querySelector("#brand-image").setAttribute("src", newImageURL);
+        document.querySelector("#brand-image").classList.remove("hide");
+    }
+}
+function hideImage() {
+    if(!imageVisibility()) {
+        document.querySelector("#brand-image").classList.add("hide");
+    }
+}
 // compare user input to selected word
 function keyCompare(userInput) {
     if(lettersGuessed.indexOf(userInput) !== -1) {
@@ -73,9 +89,11 @@ function keyCompare(userInput) {
     } else {
        guesses--;
        displayGuesses();
+       showImage();
        lettersGuessed.push(userInput);
        document.querySelector("#letters-guessed").innerHTML = lettersGuessed.join(", ");
        if(guesses === 0) {
+            showImage();
             gameLoss();
         }
    }
@@ -96,6 +114,7 @@ function updateGameState(userInput) {
 
 function gameWin(){
     wins++;
+    showImage();
     document.querySelector("#total-wins").innerHTML = wins;
     gameReset();
     displayError("you win! play again?");
@@ -116,34 +135,29 @@ function gameReset(){
 
     guesses = 10;
     underScoreString = [];
- 
+
+    hideImage();
     createUnderscores();
     displayGuesses();
     displayWord(underScoreString);
 }
 
 document.addEventListener("keyup", function(event){
-    var userInput =  event.key.toLowerCase();// key press value
-    console.log(userInput);   
+    var userInput =  event.key.toLowerCase();// key press value  
     var isLetter = validationChecker(userInput);
     // COMMENT OUT LATER:
     //isLetter = true;
     //
     displayError(""); // clear error on keyup
-    console.log(isLetter);
         // isLetter ? compareLetter(userInput) : notLetter(userInput);
             if(userInput.length > 1) return; //ignore things like shift and backspace
 
             if (isLetter) {
                 // true
-                console.log(userInput);
                 keyCompare(userInput);
             } else { 
                 // false
-                console.log(isLetter);
                 notLetter(userInput);
             }
 });
-
-console.log(wordPicker)
 gameReset();
