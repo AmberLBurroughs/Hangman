@@ -63,9 +63,10 @@ body {
 @media only screen and (max-width: 991.98px) { 
 	#game-wrapper {
 		display: block;
+		min-height: 200px;
+		height: 200px;
 	}
 	#image-display{
-	border-right: none;
-	border-bottom: 1px solid #000;
-}
+		border-right: none;
+	}
 }
