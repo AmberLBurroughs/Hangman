@@ -1,6 +1,6 @@
 body { 
   text-align: center; 
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: "Courier New", Courier, Monaco
 }
 .container {
 	text-align: center;
@@ -10,11 +10,17 @@ body {
   background: red; 
   padding: 7px 7px; 
   text-decoration: none;
-  width : 220px;
+  width: 193px;
   margin : auto;
   font-weight: bold; 
   font-style : italic;
-  margin-top: 1%;
+  margin-top: 5%;
+  font-size: 32px;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+#day-data {
+	margin-top: 10px;
+	font-weight: 300;
 }
 #game-wrapper {
 	border: 1px solid #000;

@@ -1,3 +1,27 @@
+function showDate(){
+var currentDate = new Date(),
+    day = currentDate.getDate(),
+    month = currentDate.getMonth() + 1,
+    year = currentDate.getFullYear();
+    var currentTime = new Date(),
+    hours = currentTime.getHours(),
+    minutes = currentTime.getMinutes();
+    if (minutes < 10) {
+     minutes = "0" + minutes;
+    }
+    var suffix = "am";
+    if (hours >= 12) {
+        suffix = "pm";
+        hours = hours - 12;
+    }
+    if (hours == 0) {
+        hours = 12;
+    }
+    document.querySelector("#day-data").innerHTML = (month + "/" + day + "/" + year + " " + hours + ":" + minutes  + suffix + " SF");
+}
+showDate();
+
+
 var wordBank = ["gucci", "addidas", "nike", "jordan", "bape", "channel", "lacoste", "puma", "undefeated", "palace"];
 var wins = 0;
 var losses = 0;
