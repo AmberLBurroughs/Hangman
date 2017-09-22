@@ -1,0 +1,16 @@
+.container {
+	text-align: center;
+}
+#game-wrapper {
+	border: 1px dotted #000;
+}
+#image-display{
+	border-right: 1px dotted #000;
+	border-bottom: none;
+}
+@media only screen and (max-width: 991.98px) { 
+	#image-display{
+	border-right: none;
+	border-bottom: 1px dotted #000;
+}
+}
