@@ -19,6 +19,9 @@ a:hover {
 	color: #fff;
 	background-color: #FF0000;
 }
+footer {
+	margin-top: -20px;
+}
 .main-content {
 	flex: 1 0 auto;
 }
