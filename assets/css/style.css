@@ -1,9 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body { 
   text-align: center; 
-  font-family: "Courier New", Courier, Monaco
+  font-family: "Courier New", Courier, Monaco;
+  display: flex;
+  flex-direction: column;
+}
+a {
+	color: #000;
+	font-family: "Courier New", Courier, Monaco;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #FF0000;
+}
+.main-content {
+	flex: 1 0 auto;
 }
 .container {
 	text-align: center;
+	min-height: 100%;
 }
 #banner{
 	margin-bottom: 3%;
