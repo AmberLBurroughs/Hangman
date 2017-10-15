@@ -1,4 +1,4 @@
-# Hangman-Game
+# Hangman
 
 A Javascript application that randomly picks a work from an array, and the user has to guess which letter from each the word is.
 
