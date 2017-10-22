@@ -1,4 +1,4 @@
-# Hangman
+# Hypebrand
 
 A Javascript application that randomly picks a word, and the user has to guess which letter from each the word is.
 <img src="assets/images/poster.jpg?raw=true" >
