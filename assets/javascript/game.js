@@ -27,7 +27,6 @@ var wins = 0;
 var losses = 0;
 
 var wordPicker = wordBank[Math.floor(Math.random() * wordBank.length)];
-var dashes = [];
 var lettersGuessed = [];
 var guesses = 10;
 var score = 0;
@@ -49,7 +48,6 @@ function createUnderscores() {
         underScoreString.push("_");
     }
 }
-
 // show dashes for word
 function displayWord(currentStr) {
     document.querySelector("#letters-dashes").innerHTML = currentStr.join(" ");
