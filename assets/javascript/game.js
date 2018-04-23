@@ -22,7 +22,7 @@ var currentDate = new Date(),
 showDate();
 
 
-var wordBank = ["gucci", "addidas", "nike", "jordan", "bape", "channel", "offwhite", "puma", "undefeated", "palace", "fendi", "givenchy", "balenciaga"];
+var wordBank = ["gucci", "adidas", "nike", "jordan", "bape", "channel", "offwhite", "puma", "undefeated", "palace", "fendi", "givenchy", "balenciaga"];
 var wins = 0;
 var losses = 0;
 

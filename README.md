@@ -1,10 +1,11 @@
-# Hangman-Game
+# Hypebrand
+[Demo](https://amberlburroughs.github.io/word-trivia/)
 
-A Javascript application that randomly picks a work from an array, and the user has to guess which letter from each the word is.
-
+A Javascript application that randomly picks a word, and the user has to guess which letter from each the word is.
+<img src="assets/images/poster.jpg?raw=true" >
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for grading and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for testing purposes.
 
 ### Installing
 
@@ -20,7 +21,3 @@ Open your cloned repositoy in a text editor to review the HTLM, CSS and JS.
 
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - The CSS framework used.
 
-## Acknowledgments
-
-* Special thanks to my instructor Jerome Chenette for project and direction.
-* Shout out Garrett Gruessing and Chi Lu for all your hard work in class.
